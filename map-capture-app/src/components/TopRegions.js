@@ -6,7 +6,7 @@ function TopRegions() {
 
     useEffect(() => {
         // Fetch data from API
-        axios.get('http://localhost:5000/api/top-regions')
+        axios.get('https://mapcapture-1.onrender.com/api/top-regions')
             .then(response => {
                 setTopRegions(response.data);
             })

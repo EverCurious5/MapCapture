@@ -36,7 +36,7 @@ function MapContainer({ onCapture }) {
                 const imageUrl = `data:image/png;base64,${imageBase64}`;
                 setImage(imageUrl);
 
-                await axios.post('http://localhost:5000/api/save-map', {
+                await axios.post('https://mapcapture-1.onrender.com/api/save-map', {
                     image: imageUrl,
                     region: map.getBounds().toJSON(),
                 });
